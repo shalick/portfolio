@@ -55,8 +55,14 @@
     outline: none;
     font-weight: 400;
     line-height: 1.5;
-    color: #495057;
+    color: #ffffff;
+    /*color: #495057;*/
     margin-bottom: 1.2rem;
+}
+
+.formArea:focus, .messageArea:focus {
+    border: 2px solid #483D8B;
+    transition: .4s;
 }
 
 .messageArea {
