@@ -60,6 +60,13 @@
     width: 60%;
 }
 
+.socialIcon img:hover:not(:active) {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: .4s;
+}
+
 .socialIcon a:first-child img{
     width: 40%;
 }

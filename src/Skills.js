@@ -20,9 +20,9 @@ function Skills() {
                         <div className={styles.line}></div>
                     </div>
                     <div className={styles.skillsWrapper}>
-                        <Skill icon={js} title={"JavaScript"} description={"Courses"}/>
-                        <Skill icon={html} title={"HTML&CSS"} description={"Courses"}/>
-                        <Skill icon={react} title={"React"} description={"Courses"}/>
+                        <Skill icon={js} title={"JavaScript"} description={""}/>
+                        <Skill icon={html} title={"HTML&CSS"} description={""}/>
+                        <Skill icon={react} title={"React"} description={""}/>
                     </div>
                 </div>
             </Fade>
