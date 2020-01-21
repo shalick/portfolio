@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1117b612.chunk.css",
-    "main.js": "/portfolio/static/js/main.200f40fa.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.200f40fa.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.aa5811b4.chunk.css",
+    "main.js": "/portfolio/static/js/main.41c1a9ab.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.41c1a9ab.chunk.js.map",
     "runtime~main.js": "/portfolio/static/js/runtime~main.f7d4dbe8.js",
     "runtime~main.js.map": "/portfolio/static/js/runtime~main.f7d4dbe8.js.map",
-    "static/js/2.6ecf1d97.chunk.js": "/portfolio/static/js/2.6ecf1d97.chunk.js",
-    "static/js/2.6ecf1d97.chunk.js.map": "/portfolio/static/js/2.6ecf1d97.chunk.js.map",
+    "static/js/2.c95c9216.chunk.js": "/portfolio/static/js/2.c95c9216.chunk.js",
+    "static/js/2.c95c9216.chunk.js.map": "/portfolio/static/js/2.c95c9216.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.566180bcdbebd3af9d9ec7ebd40057b2.js": "/portfolio/precache-manifest.566180bcdbebd3af9d9ec7ebd40057b2.js",
+    "precache-manifest.8bcb9803de30f86a5e3971cf1b325659.js": "/portfolio/precache-manifest.8bcb9803de30f86a5e3971cf1b325659.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.1117b612.chunk.css.map": "/portfolio/static/css/main.1117b612.chunk.css.map",
+    "static/css/main.aa5811b4.chunk.css.map": "/portfolio/static/css/main.aa5811b4.chunk.css.map",
+    "static/media/budgety.jpg": "/portfolio/static/media/budgety.41779623.jpg",
     "static/media/html.svg": "/portfolio/static/media/html.a54dc02d.svg",
     "static/media/js.svg": "/portfolio/static/media/js.40f40c53.svg",
     "static/media/linkedin2.svg": "/portfolio/static/media/linkedin2.6934d4c4.svg",
     "static/media/react.svg": "/portfolio/static/media/react.3d346b49.svg",
+    "static/media/social_network.jpeg": "/portfolio/static/media/social_network.99d00075.jpeg",
     "static/media/telegram2.svg": "/portfolio/static/media/telegram2.9ca51d2a.svg",
-    "static/media/todolist.jpg": "/portfolio/static/media/todolist.0570caf1.jpg",
     "static/media/vader.jpeg": "/portfolio/static/media/vader.043f35e6.jpeg"
   }
 }
