@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c7650b599f130f1b8c5354ebeb82755c",
+    "revision": "f8c54873db809b74dc134699fdce3464",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "20d7ecad6d75ac78d934",
-    "url": "/portfolio/static/css/main.aa5811b4.chunk.css"
+    "revision": "da1bcb0aa162e6de14f5",
+    "url": "/portfolio/static/css/main.0bf9be13.chunk.css"
   },
   {
-    "revision": "e4ae0e3987b88ff7d771",
-    "url": "/portfolio/static/js/2.c95c9216.chunk.js"
+    "revision": "c3f47ff1cfce161271d8",
+    "url": "/portfolio/static/js/2.34f59bec.chunk.js"
   },
   {
-    "revision": "20d7ecad6d75ac78d934",
-    "url": "/portfolio/static/js/main.41c1a9ab.chunk.js"
+    "revision": "da1bcb0aa162e6de14f5",
+    "url": "/portfolio/static/js/main.50458002.chunk.js"
   },
   {
     "revision": "4bc79a2d54f74fff90c2",
@@ -36,6 +36,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/linkedin2.6934d4c4.svg"
   },
   {
+    "revision": "e883b571a179d11e366d50d02f66b8f5",
+    "url": "/portfolio/static/media/profile.e883b571.jpg"
+  },
+  {
     "revision": "3d346b49bb8ec302ef11dca73484fe14",
     "url": "/portfolio/static/media/react.3d346b49.svg"
   },
@@ -46,9 +50,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9ca51d2ac295d3538a2173763f5c7e70",
     "url": "/portfolio/static/media/telegram2.9ca51d2a.svg"
-  },
-  {
-    "revision": "043f35e642ff28b639b4942a714344bc",
-    "url": "/portfolio/static/media/vader.043f35e6.jpeg"
   }
 ]);
