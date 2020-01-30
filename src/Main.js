@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Main.module.css';
-import profileIcon from "./assets/img/vader.jpeg";
+import profileIcon from "./assets/img/profile.jpg";
 
 function Main() {
   return (

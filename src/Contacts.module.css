@@ -118,6 +118,26 @@
     height: 100%o;
 }
 
+.legend {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.legendSuccess {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.legendError {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: red;
+}
+
 @media (max-width: 626px) {
     .formWrapper {
         width: 100%;

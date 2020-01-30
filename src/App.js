@@ -22,20 +22,21 @@ const particlesOpt = {
 }
 
 function App() {
-  return (
-    <div className="App">
+    return (
+        <div className="App">
 
-          <Particles className={'particles'} params={particlesOpt}/>
-          <Header/>
-          <Main/>
-          <Skills/>
-          <Projects/>
-          <Slogan/>
-          <Contacts/>
-          <Footer/>
+            <Particles className={'particles'} params={particlesOpt}/>
+            <Header/>
+            <Main/>
+            <Skills/>
+            <Projects/>
+            <Slogan/>
+            <Contacts/>
+            <Footer/>
 
-    </div>
-  );
+        </div>
+    )
 }
 
-export default App; 
+
+export default App;

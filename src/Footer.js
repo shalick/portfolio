@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import BlockTitle from "./BlockTitle";
+// import BlockTitle from "./BlockTitle";
 import telegramIcon from "./assets/img/telegram2.svg";
 import linkedInIcon from "./assets/img/linkedin2.svg";
 import gitHubIcon from "./assets/img/github.png";

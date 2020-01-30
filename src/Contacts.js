@@ -6,16 +6,24 @@ import Fade from 'react-reveal/Fade';
 class Contacts extends Component {
     constructor(props) {
         super(props);
-        this.state = {
+        this.initialState = {
             message: '',
             name: '',
-            email: ''
-        };
+            email: '',
+            legendMessage: ''
+        }
+        this.state = this.initialState
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     render() {
+        let classForLegend = this.state.legendMessage === "Send your message" ? styles.legend : ""
+        || this.state.legendMessage === "Your message has been successfully sent" ? styles.legendSuccess : ""
+        || this.state.legendMessage === "Your message has failed to be sent" ? styles.legendError : "";
+
+        // let disabled = count === props.maxCount ? 'disabled' : ""
+        // || props.startCount < 0 ? 'disabled' : "";
         return (
             <div id={'contact-form'} className={styles.contacts}>
                 <Fade bottom>
@@ -34,7 +42,11 @@ class Contacts extends Component {
                         {/*              placeholder="Type your message" value={this.state.message}></textarea>*/}
                         {/*    <button className={styles.btnSubmit} type="submit" onClick={this.handleSubmit}>Send</button>*/}
                         {/*</form>*/}
-                        <form className={styles.formWrapper}>
+
+                        <form onSubmit={this.handleSubmit} className={styles.formWrapper}>
+                            <legend className={classForLegend}>
+                                {this.state.legendMessage}
+                            </legend>
                             <input type="text"
                                    id="name"
                                    name="name"
@@ -61,11 +73,18 @@ class Contacts extends Component {
                                 required
                                 value={this.state.message}
                             />
+                            <button className={styles.btnSubmit}>Send</button>
+                        </form>
 
-                            <button className={styles.btnSubmit} type="button" value="Submit" onClick={this.handleSubmit}>Send</button>
+
+
+
+
+                             {/*<button className={styles.btnSubmit} type="button" value="Submit" >Send</button>*/}
+                            {/*<button type="submit" className={styles.btnSubmit} >Send</button>*/}
                             {/*<input type="button" value="Submit" className={styles.btnSubmit}*/}
                             {/*       onClick={this.handleSubmit}/>*/}
-                        </form>
+
                     </div>
                 </Fade>
             </div>
@@ -84,14 +103,22 @@ class Contacts extends Component {
         })
     }
 
-    handleSubmit() {
+    handleSubmit(event) {
         const templateId = 'template_H9he4tAF';
+
+        debugger;
 
         this.sendMessage(templateId, {
             message_html: this.state.message,
             from_name: this.state.name,
             reply_to: this.state.email
         })
+
+        this.setState(() => this.initialState)
+
+        event.preventDefault();
+        event.target.reset();
+        debugger;
     }
 
     sendMessage(templateId, variables) {
@@ -99,15 +126,19 @@ class Contacts extends Component {
             'gmail', templateId,
             variables
         ).then(res => {
-            console.log('Email successfully sent!');
-            this.resetForm();
+            // console.log('Email successfully sent!');
+            this.setState({
+                legendMessage: "Your message has been successfully sent"
+            });
+            // this.resetForm();
         })
         // Handle errors here however you like, or use a React error boundary
-            .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err))
-    }
-
-    resetForm() {
-        document.getElementById('contact-form').reset();
+            .catch(err => {
+                console.error('Oh well, you failed. Here some thoughts on the error that occured:', err)
+                this.setState({
+                    legendMessage: "Your message has failed to be sent"
+                });
+            })
     }
 }
 

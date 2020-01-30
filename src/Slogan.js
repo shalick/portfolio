@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Slogan.module.css';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 function Slogan() {
   return (
