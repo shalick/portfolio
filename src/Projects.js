@@ -3,6 +3,7 @@ import styles from './Projects.module.css';
 import Project from "./Project";
 import budgety from './assets/img/budgety.jpg';
 import network from './assets/img/social_network.jpeg';
+import burger from './assets/img/burger.png'
 import Fade from 'react-reveal/Fade';
 
 function Projects() {
@@ -26,6 +27,14 @@ function Projects() {
             link: 'https://shalick.github.io/budgety/',
             githubCode: 'https://github.com/shalick/budgety',
             description: 'A small JS project done for learning'
+        },
+        {
+            id: 3,
+            title: 'Burger Builder',
+            img: burger,
+            link: 'https://shalick.github.io/the-burger-builder',
+            githubCode: 'https://github.com/shalick/the-burger-builder',
+            description: 'A React-Redux project done for learning'
         }
     ];
 

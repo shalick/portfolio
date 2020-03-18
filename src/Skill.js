@@ -6,10 +6,11 @@ function Skill(props) {
     return (
         <div className={styles.skill}>
             <div className={styles.icon}>
-                <img src={props.icon} alt=""/>
+                <img src={props.icon} alt={props.title}/>
             </div>
-            <h3 className={styles.skillTitle}>{props.title}</h3>
-            <span className={styles.description}>{props.description}</span>
+            <div>
+                <span className={styles.skillTitle}>{props.title}</span>
+            </div>
         </div>
     )
 }
